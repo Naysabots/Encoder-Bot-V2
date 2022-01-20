@@ -64,11 +64,16 @@ from NaysaEncoderBot.helper_funcs.utils import add_task, on_task_complete
 from pyrogram import Client, filters
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from translation import Translation
+)
+from pyrogram import Client, filters
+from pyrogram.handlers import MessageHandler, CallbackQueryHandler
+
 from NaysaEncoderBot.plugins.incoming_message_fn import (
     incoming_start_message_f,
     incoming_compress_message_f,
     incoming_cancel_message_f
 )
+
 
 from NaysaEncoderBot.plugins.status_message_fn import (
     eval_message_f,
